@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import  { useEffect, useRef, useState } from 'react';
 import './Weather.css';
 import humidityIcon from '../assets/humidity.png';
 import windIcon from '../assets/wind.png';
