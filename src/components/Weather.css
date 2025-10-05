@@ -1,0 +1,174 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  gap: 20px;
+
+  color: #ffffff;
+  height: auto; /* auto height according to content */
+}
+
+/* 🌙 Dark theme styles */
+.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* Title */
+.weather-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+/* 🔍 Search bar container */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+    font-family: "Playfair Display", serif;
+}
+
+/* 🪞 Transparent search input for dark theme */
+.search-input {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle white border */
+  background-color: rgba(255, 255, 255, 0.05); /* translucent background */
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 220px;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* dim placeholder */
+}
+
+.search-input:focus {
+  border-color: #38bdf8; /* cyan accent border */
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 🔘 Transparent search button for dark theme */
+.search-button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  backdrop-filter: blur(4px); /* subtle glass effect */
+  
+}
+
+.search-button:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+  background-color: rgba(56, 189, 248, 0.1); /* faint cyan glow */
+}
+
+.search-button:active {
+  transform: scale(0.97);
+}
+
+
+/* Weather info container */
+.weather-info {
+  display: flex;
+  flex-direction: column; /* stack main + data vertically */
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+
+  /* Transparent card background */
+  background-color: rgba(251, 251, 251, 0.518); /* semi-transparent white */
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 16px;
+  padding: 20px;
+
+  /* Optional shadow for subtle depth */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+  /* Text color adjusted for visibility over background */
+  color: #ffffff;
+}
+
+
+/* Temperature and Location stacked vertically */
+.weather-info .temperature,
+.weather-info .location {
+  margin: 0;
+}
+
+.temperature {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+
+}
+
+/* Row for Condition, Humidity, Wind */
+.weather-row {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* space between each metric */
+  width: 100%;
+}
+
+/* Individual columns for each metric */
+.weather-column {
+  display: flex;
+  flex-direction: column; /* icon or value stacked */
+  align-items: center;
+  gap: 15px;
+}
+
+/* Metrics text styling */
+.condition,
+.humidity,
+.wind-speed {
+  font-size: 18px;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+/* Icons */
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+#windTip, #humidityTip, #conditionTip {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
