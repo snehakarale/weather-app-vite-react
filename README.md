@@ -38,7 +38,7 @@ Displays:
 
 ```bash
 git clone https://github.com/snehakarale/weather-app-vite-react.git
-cd weather-app
+cd weather-app-vite-react
 ```
 
 ### 2️⃣ Install dependencies
